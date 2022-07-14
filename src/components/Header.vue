@@ -9,7 +9,7 @@ export default {
     // 获取store
     const store = userStore();
     const router = useRouter();
-    let isCollapsed = computed(() => store.getMeunIsCollapsed);
+    let isCollapsed = computed(() => store.meunIsCollapsed);
 
     const collapsedSider = () => {
       store.setMeunIsCollapsed(!isCollapsed.value);
@@ -23,6 +23,8 @@ export default {
     })
 
     const signOut = () => {
+      store.setLoginUser("");
+      sessionStorage.removeItem('token');
       router.push("/login");
     }
 

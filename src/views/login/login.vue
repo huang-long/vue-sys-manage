@@ -31,6 +31,8 @@ export default {
         loginForm.value.validate((valid: boolean) => {
           if (!valid) return;
           store.setLoginUser(formData.loginName);
+          sessionStorage.setItem('token', formData.loginName);
+          store.loadMenu();
           router.push("/home");
         });
       }

@@ -3,16 +3,15 @@
 import { ref, computed, watch } from "vue";
 import { userStore } from "../stores/counter";
 import { useRoute, useRouter } from "vue-router";
-import { menuList } from "../data/menuList";
 
 export default {
   setup() {
-    const menu = menuList;
     const route = useRoute();
     const router = useRouter();
     // 获取store
     const store = userStore();
-    let isCollapsed = computed(() => store.getMeunIsCollapsed);
+    const menu = computed(() => store.menuList);
+    let isCollapsed = computed(() => store.meunIsCollapsed);
     let sideMenu = ref();
     let fullPath = computed(() => route.fullPath);
 
@@ -45,7 +44,7 @@ export default {
 </script>
 
 <template>
-  <Sider ref="sideMenu" hide-trigger collapsible :collapsed-width="200" v-model="isCollapsed" class="sider">
+  <Sider ref="sideMenu" hide-trigger collapsible :collapsed-width="78" :width="220" v-model="isCollapsed" class="sider">
 
     <Menu :theme="menuTheme" width="auto" :class="menuitemClasses" accordion>
       <template v-for="item in menu">

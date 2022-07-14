@@ -8,7 +8,7 @@ export declare interface Menu {
     children?: Array<Menu>,
 }
 
-export const menuList = [
+export const menuList1 = [
     {
         id: "M0001",
         icon: "md-home",
@@ -98,6 +98,46 @@ export const menuList = [
         name: "i18n",
         componentPath: "i18n.vue",
         title: "国际化功能",
+    },
+    {
+        id: "M0012",
+        icon: "md-warning",
+        title: "错误处理",
+        children: [
+            {
+                id: "M0013",
+                path: "/permission",
+                name: "permission",
+                componentPath: "permission.vue",
+                title: "权限测试",
+            },
+            {
+                id: "M0014",
+                path: "/404",
+                name: "404",
+                componentPath: "error404.vue",
+                title: "404页面",
+            },
+        ],
+    },
+    {
+        id: "M0015",
+        icon: "md-thumbs-up",
+        path: "/donate",
+        name: "donate",
+        componentPath: "donate.vue",
+        title: "支持作者",
+    },
+];
+
+export const menuList2 = [
+    {
+        id: "M0001",
+        icon: "md-home",
+        path: "/home",
+        name: "home",
+        componentPath: "home.vue",
+        title: "系统首页",
     },
     {
         id: "M0012",

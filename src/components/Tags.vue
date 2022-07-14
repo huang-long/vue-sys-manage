@@ -11,7 +11,7 @@ export default {
     const router = useRouter();
     // 获取store
     const store = userStore();
-    let tagsList = computed(() => store.getTagsList);
+    let tagsList = computed(() => store.tagsList);
 
     const isActive = (path: string) => {
       return path === route.fullPath;
@@ -40,7 +40,7 @@ export default {
         if (tagsList.value.length >= 8) {
           store.delTagsItem(0);
         }
-        store.setTagsItem({
+        store.addTagsItem({
           name: route.name as string,
           title: route.meta.title as string,
           path: route.fullPath,

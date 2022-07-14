@@ -11,8 +11,7 @@ import './styles/my-theme/index.less';
 const app = createApp(App)
 
 app.use(createPinia());
-app.use(router).use(ViewUIPlus, { i18n });
-// app.use(i18n).use(ViewUIPlus, { i18n });
-app.use(i18n);
+app.use(router);
+app.use(i18n).use(ViewUIPlus, { i18n });
 
 app.mount('#app');

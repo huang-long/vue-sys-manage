@@ -4,7 +4,7 @@
   <div>
     <Row>
       通过切换语言按钮，来改变当前内容的语言。
-      <Button type="primary" @click="changeLang()" size="small">切换语音</Button>
+      <Button type="primary" @click="changeLang()" size="small">切换语言</Button>
     </Row>
     <Divider>text</Divider>
     <Row>
