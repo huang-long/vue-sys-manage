@@ -98,6 +98,14 @@ export const menuList1 = [
         name: "i18n",
         componentPath: "i18n.vue",
         title: "国际化功能",
+    },    
+    {
+        id: "M0016",
+        icon: "md-cog",
+        path: "/env",
+        name: "env",
+        componentPath: "env.vue",
+        title: "环境变量",
     },
     {
         id: "M0012",

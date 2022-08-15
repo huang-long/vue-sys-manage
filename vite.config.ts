@@ -1,30 +1,16 @@
-import { fileURLToPath, URL } from 'url'
+import baseConfig from "./vite.config.base";
+import devConfig from "./vite.config.dev"
+import prodConfig from "./vite.config.prod"
+import { defineConfig, loadEnv } from 'vite'
 
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+const viteConfig = {
+  "build": () => ({ ...baseConfig, ...devConfig }),
+  "serve": () => ({ ...baseConfig, ...prodConfig })
+}
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  },
-  css: {
-    // css预处理器
-    preprocessorOptions: {
-      less: {
-        charset: false,
-        additionalData: '@import "./src/styles/commonless/index.less";',
-      },
-    },
-    // loaderOptions: {
-    //   less: {
-    //     lessOptions: {
-    //       javascriptEnabled: true
-    //     }
-    //   }
-    // }
-  }
+export default defineConfig(({ command, mode }) => {
+  loadEnv(mode, process.cwd());
+  return viteConfig[command]();
 })
+
