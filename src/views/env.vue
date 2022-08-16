@@ -16,7 +16,7 @@
       <DescriptionList :title="'配置文件'" :col="1">
         <Description term="1:">.env通用环境参数</Description>
         <Description term="2:">.env.development测试环境参数</Description>
-        <Description term="3:">.env.product生成环境参数</Description>
+        <Description term="3:">.env.product生产环境参数</Description>
       </DescriptionList>
     </Row>
     <Divider>配置文件</Divider>

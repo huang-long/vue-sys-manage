@@ -92,6 +92,14 @@ export const menuList1 = [
         title: "echarts图表",
     },
     {
+        id: "M0020",
+        icon: "md-git-compare",
+        path: "/bpmn",
+        name: "bpmn",
+        componentPath: "bpmn.vue",
+        title: "流程图",
+    },
+    {
         id: "M0011",
         icon: "md-planet",
         path: "/i18n",
@@ -110,7 +118,7 @@ export const menuList1 = [
     {
         id: "M0012",
         icon: "md-warning",
-        title: "错误处理",
+        title: "权限处理",
         children: [
             {
                 id: "M0013",
@@ -150,7 +158,7 @@ export const menuList2 = [
     {
         id: "M0012",
         icon: "md-warning",
-        title: "错误处理",
+        title: "权限处理",
         children: [
             {
                 id: "M0013",
