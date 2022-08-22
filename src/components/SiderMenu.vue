@@ -55,7 +55,7 @@ export default {
 
             <!-- 菜单栏收起时，二级子菜单渲染 -->
             <Dropdown v-if="isCollapsed" placement="right-start" class="drop-down-menu">
-              <div></div>
+              <div>&nbsp;</div>
               <template #list>
                 <DropdownMenu>
                   <!-- 展开二级子菜单 -->
