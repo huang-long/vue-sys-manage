@@ -2,7 +2,7 @@
 <script lang="ts">
 import { ref } from 'vue';
 export default {
-  name: "error404",
+  name: "DemoError404",
   setup() {
     let pageType = ref('404')
     return {

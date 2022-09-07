@@ -4,6 +4,7 @@ import { useRouter } from "vue-router";
 import { userStore } from "../../stores/counter";
 
 export default {
+  name: "DemoLogin",
   setup() {
     // 获取store
     const store = userStore();

@@ -175,7 +175,7 @@ export default {
   display: flex;
   line-height: 60px;
 
-  /deep/i {
+  :deep(i) {
     margin: 15px 20px;
   }
 }
@@ -206,7 +206,7 @@ export default {
     > img {
       margin-right: 10px;
     }
-    /deep/i {
+    :deep(i) {
       margin: 0;
     }
   }

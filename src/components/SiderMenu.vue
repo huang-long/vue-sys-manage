@@ -109,7 +109,7 @@ export default {
           </div>
         </Submenu>
 
-        <!-- 展开但没有子菜单 -->
+        <!-- 没有子菜单 -->
         <MenuItem v-else :name="item.id" :to="item.path" :key="'2_'+ item.id">
         <Icon :type="item.icon" />
         <span>{{ item.title }}</span>
@@ -136,7 +136,7 @@ export default {
   width: 100%;
   height: 100%;
 
-  /deep/.ivu-tooltip-rel {
+ :deep(.ivu-tooltip-rel) {
     width: 100%;
     height: 100%;
   }
@@ -149,11 +149,11 @@ export default {
   width: 100%;
   height: 100%;
 
-  /deep/.ivu-select-dropdown {
+  :deep(.ivu-select-dropdown) {
     width: auto;
   }
 
-  /deep/.ivu-dropdown-rel {
+  :deep(.ivu-dropdown-rel) {
     width: 100%;
     height: 100%;
   }
@@ -179,7 +179,7 @@ export default {
 }
 
 .collapsed-menu {
-  /deep/.ivu-menu-submenu-title {
+  :deep(.ivu-menu-submenu-title) {
     .ivu-menu-submenu-title-icon {
       display: none;
     }
@@ -196,11 +196,11 @@ export default {
     font-size: 22px;
   }
 
-  /deep/.ivu-select-dropdown {
+  :deep(.ivu-select-dropdown) {
     margin: 0 0 0 5px;
   }
 
-  /deep/.ivu-dropdown-item {
+  :deep(.ivu-dropdown-item) {
     padding: 0;
   }
 }

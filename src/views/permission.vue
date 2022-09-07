@@ -27,6 +27,7 @@
 import { userStore } from "../stores/counter";
 
 export default {
+  name: "DemoPermission",
   setup() {
     // 获取store
     const store = userStore();

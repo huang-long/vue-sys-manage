@@ -16,6 +16,7 @@
 import { resolveComponent } from 'vue';
 
 export default {
+  name: "DemoTabs",
   setup() {
     const label = (h: any) => {
       return h('div', [

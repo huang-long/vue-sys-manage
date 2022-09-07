@@ -17,6 +17,7 @@ import * as echarts from "echarts";
 import { onMounted, nextTick } from 'vue';
 
 export default {
+  name: "DemoCharts",
   setup() {
     let myChart: echarts.EChartsType;
     onMounted(() => {

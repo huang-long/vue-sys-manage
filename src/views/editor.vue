@@ -25,6 +25,7 @@ import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
 
 
 export default {
+  name: "DemoEditer",
   components: { Editor, Toolbar },
   setup() {
     // 编辑器实例，必须用 shallowRef

@@ -1,10 +1,10 @@
 <style lang="less" scoped>
 .vue-flow-content {
   height: 400px;
-  /deep/.node-light {
+  :deep(.node-light) {
     background: none;
   }
-  /deep/.node-dark {
+  :deep(.node-dark) {
     background: #eeeeee;
   }
 }
@@ -39,6 +39,7 @@ import { ref } from 'vue';
 import { Message } from 'view-ui-plus';
 
 export default {
+  name: "DemoBpmn",
   components: { VueFlow, Background, Controls, MiniMap },
   setup() {
 

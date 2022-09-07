@@ -48,6 +48,7 @@ import { userStore } from "../stores/counter";
 import { useRoute, useRouter } from "vue-router";
 
 export default {
+  name: "MainPage",
   components: {
     myHeader,
     myMenu,

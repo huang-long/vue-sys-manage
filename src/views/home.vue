@@ -67,6 +67,7 @@ interface Movie {
   rate?: number
 }
 export default {
+  name: "DemoHome",
   setup() {
     let movieList: Array<Movie> = [
       {

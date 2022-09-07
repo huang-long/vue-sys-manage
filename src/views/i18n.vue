@@ -32,7 +32,7 @@ import type { ComponentInternalInstance } from 'vue';
 import { getCurrentInstance } from 'vue';
 
 export default {
-
+  name: "DemoI18n",
   setup() {
     const { t } = useI18n();
     const { proxy } = (getCurrentInstance() as ComponentInternalInstance)

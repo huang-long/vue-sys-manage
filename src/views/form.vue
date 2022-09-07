@@ -63,6 +63,7 @@ import { reactive, ref } from 'vue';
 import { Message } from 'view-ui-plus';
 
 export default {
+  name: "DemoForm",
   setup() {
 
     let formValidate = reactive({

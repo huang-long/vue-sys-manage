@@ -26,7 +26,7 @@
 <script lang="ts">
 
 export default {
-
+  name: "DemoEnv",
   setup() {
     const VITE_PARAM = import.meta.env.VITE_PARAM;
     const VITE_BASE_URL = import.meta.env.VITE_BASE_URL;

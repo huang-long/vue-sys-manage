@@ -142,7 +142,7 @@ export default {
       background: #f8f8f9;
       white-space: nowrap;
 
-      /deep/i {
+      :deep(i) {
         width: 0;
         margin: 0 -6px 0 0;
         height: 22px;
@@ -159,13 +159,13 @@ export default {
       height: 32px;
       background: #fff;
 
-      /deep/i {
+      :deep(i) {
         width: 22px;
       }
     }
 
     .ivu-tabs-tab:hover {
-      /deep/i {
+      :deep(i) {
         width: 22px;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);

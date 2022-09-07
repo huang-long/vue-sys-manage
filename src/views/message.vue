@@ -63,6 +63,7 @@ import { ref } from 'vue';
 
 
 export default {
+  name: "DemoMessage",
   setup() {
     const background = (type: string) => {
       Message[type]({

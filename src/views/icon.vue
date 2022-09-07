@@ -29,6 +29,7 @@
 import { ref } from 'vue';
 
 export default {
+  name: "DemoIcon",
   setup() {
     let link = ref("https://iviewui.com/view-ui-plus/component/base/icon");
     return {

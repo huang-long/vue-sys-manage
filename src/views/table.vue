@@ -8,7 +8,10 @@
 </style>
 <template>
   <div>
-
+    <Row>
+      相关文档：
+      <a href="https://iviewui.com/view-ui-plus/component/form/table">view ui table配置</a>
+    </Row>
     <Form ref="form" :model="formInline" :rules="ruleInline" :label-width="50">
       <Row>
         <Col span="6">
@@ -52,6 +55,7 @@ import { reactive, ref } from 'vue';
 import { tableDataList } from '../data/tableList';
 
 export default {
+  name: "DemoTable",
   setup() {
     const columns = [{
       type: 'selection',
