@@ -13,7 +13,6 @@ githup地址：[https://github.com/huang-long/vue-sys-manage](https://github.com
 
 ```sh
 npm install
-（建议cnpm install）
 ```
 
 ### Compile and Hot-Reload for Development
