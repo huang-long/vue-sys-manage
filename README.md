@@ -7,6 +7,8 @@ vue3 + typescript + view ui后台管理系统
 
 githup地址：[https://github.com/huang-long/vue-sys-manage](https://github.com/huang-long/vue-sys-manage)
 
+gitee地址：[https://gitee.com/huanglgln/vue-sys-manage](https://gitee.com/huanglgln/vue-sys-manage)
+
 ![Image text](https://gitee.com/huanglgln/vue-sys-manage/raw/master/src/images/page.jpg)
 
 ## Project Setup
