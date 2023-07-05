@@ -3,7 +3,7 @@
 #### Description
 vue3 + typescript + view ui （system manage）
 
-Demo address：[http://106.12.116.166:8080](http://106.12.116.166:8080)
+Demo address：[http://101.43.32.67:8080](http://101.43.32.67:8080)
 
 ## Project Setup
 

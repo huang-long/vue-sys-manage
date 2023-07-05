@@ -3,7 +3,7 @@
 #### Description
 vue3 + typescript + view ui后台管理系统
 
-演示地址：[http://106.12.116.166:8080](http://106.12.116.166:8080)
+演示地址：[http://101.43.32.67:8080](http://101.43.32.67:8080)
 
 githup地址：[https://github.com/huang-long/vue-sys-manage](https://github.com/huang-long/vue-sys-manage)
 

@@ -12,6 +12,15 @@
     <Row>
       <img src="../images/shoukuanma.png" />
     </Row>
+
+    <Row>
+      <Space>
+        <a href="https://gitee.com/huanglgln/vue-sys-manage-adv" target="_blank">vue3 + typescript + Ant Design
+          Vue后台管理系统</a>
+        <a href="https://gitee.com/huanglgln/vue-sys-manage-el" target="_blank">vue3 + typescript + element plus后台管理系统
+        </a>
+      </Space>
+    </Row>
   </div>
 </template>
 

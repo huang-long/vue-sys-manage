@@ -8,7 +8,7 @@
       <Title>支持拖拽</Title>
     </Row>
     <Row>
-      <Text>VIEW UI自带上传组件。 访问地址：<a href="https://lin-xin.gitee.io/example/work/#/upload">VIEW UI Upload</a></Text>
+      <Text>VIEW UI自带上传组件。 访问地址：<a href="https://iviewui.com/view-ui-plus/component/form/upload">VIEW UI Upload</a></Text>
     </Row>
     <br>
     <Upload multiple type="drag" action="/posts/fileUplaod">

@@ -4,8 +4,8 @@ import prodConfig from "./vite.config.prod"
 import { defineConfig, loadEnv } from 'vite'
 
 const viteConfig = {
-  "build": () => ({ ...baseConfig, ...devConfig }),
-  "serve": () => ({ ...baseConfig, ...prodConfig })
+  "build": () => ({ ...baseConfig, ...prodConfig }),
+  "serve": () => ({ ...baseConfig, ...devConfig })
 }
 
 // https://vitejs.dev/config/
