@@ -1,7 +1,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Divider>环境变量</Divider>
     <Row>
       <DescriptionList :title="'环境变量'" :col="1">

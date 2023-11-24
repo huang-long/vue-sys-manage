@@ -2,7 +2,7 @@
 <template>
   <!-- 文档： https://www.npmjs.com/package/vue-pdf-embed -->
   <!-- 文档： https://www.npmjs.com/package/vue3-pdfjs -->
-  <div>
+  <div class="container">
     <PDFView :pdfUrl="jsPdf" />
   </div>
 </template>

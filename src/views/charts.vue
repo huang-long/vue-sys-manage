@@ -2,7 +2,7 @@
 
 <style lang="less" scoped></style>
 <template>
-  <div>
+  <div class="container">
     <Row v-margin="20">
       更多查看：<a href="https://echarts.apache.org/zh/index.html">echarts官方文档</a>
     </Row>

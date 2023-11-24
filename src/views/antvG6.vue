@@ -238,6 +238,9 @@ const initAntvG6Graph = () => {
     // fitView: true,
     layout: {
       type: "forceAtlas2", // 建议（force2, forceAtlas2），值：random, radial, mds, circular, fruchterman, force, gForce, force2, forceAtlas2, dagre, concentric, grid
+      preventOverlap: true, // 防止节点重叠
+      prune: false,
+      kr: 30
     },
     modes: {
       default: ["drag-canvas", "drag-node", "zoom-canvas"],

@@ -2,7 +2,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <div class="plugins-tips">
       wangEditor：轻量级 web 富文本编辑器，配置方便，使用简单。
       访问地址：

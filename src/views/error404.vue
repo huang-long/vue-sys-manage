@@ -12,7 +12,7 @@ export default {
 }
 </script>
 <template>
-  <div>
+  <div class="container">
     <Exception :type="pageType" />
   </div>
 </template>

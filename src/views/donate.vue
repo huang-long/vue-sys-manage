@@ -3,7 +3,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row v-margin="20">
       <Text>如果对你有帮助，那就请作者喝杯咖啡吧（^-^）。</Text>
       <Text>如果问题可以一起交流，微信：huanglgln。</Text>

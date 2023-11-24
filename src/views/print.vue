@@ -4,7 +4,7 @@
 }
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       <Button type="primary" size="small" v-print="printObj">打印</Button>
       <div id="loading" v-show="printLoading"></div>

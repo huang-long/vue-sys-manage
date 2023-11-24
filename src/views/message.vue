@@ -3,7 +3,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Title v-font="20">Alert 警告提示</Title>
     <div>
       <Alert closable>An info prompt</Alert>

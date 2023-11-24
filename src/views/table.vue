@@ -7,7 +7,7 @@
 }
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       相关文档：
       <a href="https://iviewui.com/view-ui-plus/component/form/table">view ui table配置</a>

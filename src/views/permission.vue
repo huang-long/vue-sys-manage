@@ -3,7 +3,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Divider>鉴权</Divider>
     <Auth :authority="authority">
       <Alert type="success">admin权限通过时显示</Alert>

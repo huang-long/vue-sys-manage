@@ -10,7 +10,7 @@
 }
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row v-margin="5">
       更多查看：<a href="https://vueflow.dev/">Vue Flow官方文档</a>
     </Row>

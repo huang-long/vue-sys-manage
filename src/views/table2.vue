@@ -6,7 +6,7 @@
 }
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       相关文档：
       <a href="https://vxetable.cn/#/table/start/install">vxe-table配置</a>

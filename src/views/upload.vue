@@ -3,7 +3,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       <Title>支持拖拽</Title>
     </Row>

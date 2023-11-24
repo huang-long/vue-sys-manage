@@ -1,7 +1,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       <Title>ICON使用方法</Title>
     </Row>

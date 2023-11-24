@@ -24,7 +24,7 @@
           <Breadcrumb :style="{margin: '0 0 10px 0'}">
             <BreadcrumbItem v-for="item in tagsName" :key="item">{{item}}</BreadcrumbItem>
           </Breadcrumb>
-          <Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
+          <Content>
             <router-view v-slot="{ Component }">
               <transition name="move" mode="out-in">
                 <keep-alive :include="tagsList">

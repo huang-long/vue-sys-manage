@@ -1,7 +1,7 @@
 <style lang="less" scoped>
 </style>
 <template>
-  <div>
+  <div class="container">
     <Row>
       通过切换语言按钮，来改变当前内容的语言。
       <Button type="primary" @click="changeLang()" size="small">切换语言</Button>
