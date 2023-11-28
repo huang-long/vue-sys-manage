@@ -84,7 +84,7 @@
 }
 </style>
 <template>
-  <div>
+  <div ref="homePage">
 
     <!-- 待办、已办、办结、消息、预警 -->
     <Row :gutter="20" class="mgb20">
@@ -265,11 +265,11 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, nextTick, onMounted, ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 import * as echarts from "echarts";
 import { onBeforeUnmount } from 'vue';
 import { watch } from 'vue';
-import { userStore } from '@/stores/counter';
+import { useElementSize } from '@vueuse/core';
 
 const messageList = ref(
   [{
@@ -731,12 +731,18 @@ const resizeChart = () => {
   }, 400);
 }
 
-// 样式变化重新渲染
-const store = userStore();
-const collapse = computed(() => store.meunIsCollapsed);
-watch(collapse, () => {
+// 监听页面大小变化
+const homePage = ref();
+const { width: pageWidth } = useElementSize(homePage);
+watch(pageWidth, () => {
   resizeChart();
 });
+// 样式变化重新渲染
+// const store = userStore();
+// const collapse = computed(() => store.meunIsCollapsed);
+// watch(collapse, () => {
+//   resizeChart();
+// });
 
 // 初始化渲染
 onMounted(() => {
