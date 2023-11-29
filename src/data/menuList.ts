@@ -162,7 +162,7 @@ export const menuList1 = [
     {
         id: "Auth_M0012",
         icon: "md-warning",
-        title: "权限处理",
+        title: "安全处理",
         children: [
             {
                 id: "Auth_M0013",
@@ -209,7 +209,7 @@ export const menuList2 = [
     {
         id: "Auth_M0012",
         icon: "md-warning",
-        title: "权限处理",
+        title: "安全处理",
         children: [
             {
                 id: "Auth_M0013",

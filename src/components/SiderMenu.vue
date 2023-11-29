@@ -70,7 +70,7 @@ export default {
                       </DropdownItem>
                       <template #list>
                         <DropdownMenu>
-                          <DropdownItem v-for="(item3, index3) in item2.children" :key="index3">
+                          <DropdownItem v-for="item3 in item2.children" :key="item3.id">
                             <MenuItem :name="item3.id" :to="item3.path">{{ item3.title }}</MenuItem>
                           </DropdownItem>
                         </DropdownMenu>
@@ -96,13 +96,13 @@ export default {
                 <template #title>
                   <span>{{ item2.title }}</span>
                 </template>
-                <MenuItem v-for="(item3, index3) in item2.children" :key="index3" :name="item2.path" :to="item3.path">
+                <MenuItem v-for="item3 in item2.children" :key="item3.id" :name="item3.id" :to="item3.path">
                 <span>{{ item3.title }}</span>
                 </MenuItem>
               </Submenu>
 
               <!-- 无三级子菜单 -->
-              <MenuItem v-else :key="item2.id + '2'" :name="item2.path" :to="item2.path">
+              <MenuItem v-else :key="item2.id + '2'" :name="item2.id" :to="item2.path">
               <span>{{ item2.title }}</span>
               </MenuItem>
             </template>
