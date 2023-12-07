@@ -6,6 +6,10 @@
 <template>
   <div class="container">
     <Row>
+      相关文档：
+      <a href="https://github.com/huang-long/vue3-print-ts">vue-print-ts</a>
+    </Row>
+    <Row>
       <Button type="primary" size="small" v-print="printObj">打印</Button>
       <div id="loading" v-show="printLoading"></div>
     </Row>
@@ -14,40 +18,27 @@
       <Table stripe :columns="columns" :data="data"></Table>
     </div>
     <Divider>打印区域</Divider>
-    <Row>
-      相关文档：
-      <a href="https://github.com/Power-kxLee/vue-print-nb#vue3-version">vue-print-nb</a>
-    </Row>
   </div>
 </template>
 
 <script lang="ts">
 import { ref } from 'vue';
-// @ts--ignore 
-import print from 'vue3-print-nb';
+import type { PrintConf } from 'vue3-print-ts';
 
 export default {
   name: "DemoPrint",
-  directives: {
-    print
-  },
   setup() {
     let printLoading = ref(true);
-    let printObj = ref({
-      id: "printMe",
-      popTitle: 'good print',
-      extraCss: "https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.compat.css, https://cdn.bootcdn.net/ajax/libs/hover.css/2.3.1/css/hover-min.css",
+    let printObj = ref<PrintConf>({
+      ids: "printMe",
+      printTitle: '打印测试',
       extraHead: '<meta http-equiv="Content-Language"content="zh-cn"/>',
-      beforeOpenCallback(vue: { printLoading: boolean; }) {
-        vue.printLoading = true
-        console.log('打开之前')
+      showBackground: true,
+      beforePrint() {
+        console.log('打印之前')
       },
-      openCallback(vue: { printLoading: boolean; }) {
-        vue.printLoading = false
-        console.log('打开打印页面')
-      },
-      closeCallback(vue: any) {
-        console.log('关闭了打印工具')
+      afterPrint() {
+        console.log('打印之后')
       }
     })
     let columns = ref([
